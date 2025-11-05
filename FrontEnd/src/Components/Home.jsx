@@ -11,41 +11,41 @@ const Home = () => {
 
       {/* Hero Section */}
       <section
-        id="home"
-        className="flex flex-col items-center justify-center text-center min-h-screen px-6 pt-24"
-      >
-        <motion.h1
-          className="text-5xl sm:text-6xl md:text-6xl font-extrabold mb-6 bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent drop-shadow-md"
-          initial={{ opacity: 0, y: -30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-        >
-          Welcome to <span className="text-white">Coding Club</span>
-        </motion.h1>
-
-        <motion.p
-          className="text-gray-300 text-lg sm:text-xl max-w-2xl mb-8 leading-relaxed"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5, duration: 1 }}
-        >
-          A vibrant community of innovators and problem-solvers, united by the
-          love for technology, creativity, and collaboration.
-        </motion.p>
-
-        <motion.a
-          href="#about"
-          className="bg-gradient-to-r from-blue-500 to-cyan-400 hover:from-cyan-400 hover:to-blue-500 text-white px-8 py-3 rounded-full font-semibold shadow-lg shadow-blue-500/30 transition-transform transform hover:scale-110"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1 }}
-        >
-          Discover More
-        </motion.a>
-
-        {/* Background Glow */}
-        <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,_rgba(37,99,235,0.15),_transparent_70%)]"></div>
-      </section>
+              id="home"
+              className="flex flex-col items-center justify-center text-center min-h-screen px-6 pt-24"
+            >
+              <motion.h1
+                className="text-5xl sm:text-6xl md:text-6xl font-extrabold mb-6 bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent drop-shadow-md"
+                initial={{ opacity: 0, y: -30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+              >
+                Welcome to <span className="text-white">Coding Club</span>
+              </motion.h1>
+      
+              <motion.p
+                className="text-gray-300 text-lg sm:text-xl max-w-2xl mb-8 leading-relaxed"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.5, duration: 1 }}
+              >
+                Empowering students to become innovative thinkers and problem solvers.
+                Our club inspires curiosity, collaboration, and a culture of coding —
+                bridging classroom learning with real-world technologies.
+              </motion.p>
+      
+              <motion.a
+                href="#about"
+                className="bg-gradient-to-r from-blue-500 to-cyan-400 hover:from-cyan-400 hover:to-blue-500 text-white px-8 py-3 rounded-full font-semibold shadow-lg shadow-blue-500/30 transition-transform transform hover:scale-110"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 1 }}
+              >
+                Discover More
+              </motion.a>
+      
+              <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,_rgba(37,99,235,0.15),_transparent_70%)]"></div>
+            </section>
 
       {/* About Section */}
       <section
@@ -77,14 +77,22 @@ const Home = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-blue-400">
               About <span className="text-white">Coding Club</span>
             </h2>
-            <p className="text-lg leading-relaxed mb-6 text-gray-300">
-              We’re a community that thrives on curiosity, teamwork, and
-              innovation. From hackathons to workshops, we help students explore
-              real-world tech and build impactful solutions.
+           <p className="text-lg leading-relaxed mb-6 text-gray-300">
+              The <span className="text-blue-400 font-semibold">Coding Club</span> aims to
+              inculcate a culture of coding and problem-solving in students. It
+              exposes members to cutting-edge technologies, encourages
+              participation in hackathons, and builds confidence to work on
+              real-world challenges.
+            </p>
+            <p className="text-lg leading-relaxed text-gray-400">
+              Our goal is to nurture creativity and develop an affinity towards
+              global computing models and workflows. Through workshops,
+              projects, and teamwork, we empower students to evolve into
+              industry-ready professionals.
             </p>
 
             <div className="flex flex-wrap justify-center md:justify-start gap-3 mt-6">
-              {[ "🧮 DSA Zone","💻 Web Dev", "🤖 AI & ML", "🚀 Hackathons"].map((tag) => (
+              {[ "🧠 DSA Zone","💻 Web Dev", "🤖 AI & ML", "🚀 Hackathons"].map((tag) => (
                 <div
                   key={tag}
                   className="bg-gray-800/60 backdrop-blur-sm border border-gray-700 rounded-xl px-4 py-2 text-sm text-blue-300 shadow-inner"
@@ -176,8 +184,8 @@ const Home = () => {
             transition={{ duration: 0.8 }}
           >
             <p className="text-lg leading-relaxed">
-              Have a question or want to collaborate?  
-              Let’s connect and bring your ideas to life.
+              Have ideas, feedback, or want to collaborate?  
+              Let’s connect and create something extraordinary together.
             </p>
             <div className="flex items-center space-x-4">
               <Mail className="text-blue-400" />
