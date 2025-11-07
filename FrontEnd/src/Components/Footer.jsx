@@ -9,7 +9,7 @@ const Footer = () => {
         {/* Logo / About Section */}
         <div>
           <h1 className="text-2xl font-bold text-blue-400 mb-3">
-            Coding<span className="text-white">Club</span>
+            Code<span className="text-white">X</span>
           </h1>
           <p className="text-gray-400 text-sm leading-relaxed">
             A student-driven community fostering innovation, coding excellence, 
@@ -82,7 +82,7 @@ const Footer = () => {
 
       {/* Divider Line */}
       <div className="border-t border-gray-800 mt-10 pt-5 text-center text-gray-500 text-sm">
-        © {new Date().getFullYear()} Coding Club — All Rights Reserved.
+        © {new Date().getFullYear()} CodeX— All Rights Reserved.
         <br className="sm:hidden" />
       </div>
     </footer>

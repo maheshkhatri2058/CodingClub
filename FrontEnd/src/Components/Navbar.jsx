@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,24 +15,24 @@ const Navbar = () => {
           {/* Logo / Club Name */}
           <div className="flex-shrink-0">
             <h1 className="text-2xl font-bold text-blue-400">
-              Coding<span className="text-white">Club</span>
+              Code<span className="text-white">X</span>
             </h1>
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6">
-            <a href="#home" className="hover:text-blue-400 transition">
+            <Link to="/" className="hover:text-blue-400 transition">
               Home
-            </a>
+            </Link>
             <a href="#about" className="hover:text-blue-400 transition">
               About
             </a>
             <a href="#events" className="hover:text-blue-400 transition">
               Events
             </a>
-            <a href="#projects" className="hover:text-blue-400 transition">
-              Projects
-            </a>
+            <Link to='/discussion' className="hover:text-blue-400 transition">
+              Open Discussion
+            </Link>
             <a href="#contact" className="hover:text-blue-400 transition">
               Contact
             </a>

@@ -1,18 +1,18 @@
 import React from "react";
-import Navbar from "./Navbar";
+import Navbar from "../Components/Navbar";
 import { motion } from "framer-motion";
 import { Code2, Users, Rocket, Mail, Phone, MapPin } from "lucide-react";
 import intro from '../assets/intro.jpg'
 
 const Home = () => {
   return (
-    <div className="bg-gradient-to-b from-gray-950 via-black to-gray-950 min-h-screen text-white scroll-smooth font-inter">
+    <div className=" text-white scroll-smooth font-inter">
       <Navbar />
 
       {/* Hero Section */}
       <section
               id="home"
-              className="flex flex-col items-center justify-center text-center min-h-screen px-6 pt-24"
+              className="flex flex-col items-center justify-center text-center min-h-screen px-6 pt-24 text-black"
             >
               <motion.h1
                 className="text-5xl sm:text-6xl md:text-6xl font-extrabold mb-6 bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent drop-shadow-md"
@@ -20,11 +20,11 @@ const Home = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
               >
-                Welcome to <span className="text-white">Coding Club</span>
+                Welcome to <span className="text-gray-700">CodeX</span>
               </motion.h1>
       
               <motion.p
-                className="text-gray-300 text-lg sm:text-xl max-w-2xl mb-8 leading-relaxed"
+                className="text-gray-700 text-lg sm:text-xl max-w-2xl mb-8 leading-relaxed"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5, duration: 1 }}
@@ -75,10 +75,10 @@ const Home = () => {
             className="text-center md:text-left"
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-blue-400">
-              About <span className="text-white">Coding Club</span>
+              About <span className="text-white">CodeX</span>
             </h2>
            <p className="text-lg leading-relaxed mb-6 text-gray-300">
-              The <span className="text-blue-400 font-semibold">Coding Club</span> aims to
+              The <span className="text-blue-400 font-semibold">CodeX</span> aims to
               inculcate a culture of coding and problem-solving in students. It
               exposes members to cutting-edge technologies, encourages
               participation in hackathons, and builds confidence to work on
@@ -130,8 +130,8 @@ const Home = () => {
           {[ 
             {
               icon: <Code2 size={42} />,
-              title: "Coding Hackathon",
-              desc: "Compete, code, and innovate in our annual hackathon event.",
+              title: "Coding Competition",
+              desc: "Compete, code, and innovate in our annual hackathon event on 14th November",
             },
             {
               icon: <Users size={42} />,
@@ -189,15 +189,15 @@ const Home = () => {
             </p>
             <div className="flex items-center space-x-4">
               <Mail className="text-blue-400" />
-              <span>codingclub@email.com</span>
+              <span>codexmca@gmail.com</span>
             </div>
             <div className="flex items-center space-x-4">
               <Phone className="text-blue-400" />
-              <span>+91 98765 43210</span>
+              <span>+91 85096 79264</span>
             </div>
             <div className="flex items-center space-x-4">
               <MapPin className="text-blue-400" />
-              <span>Acharya College, Bengaluru</span>
+              <span>Acharya Institute of Technology, Bengaluru</span>
             </div>
           </motion.div>
 
