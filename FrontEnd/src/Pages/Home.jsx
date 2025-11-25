@@ -131,7 +131,7 @@ const Home = () => {
             {
               icon: <Code2 size={42} />,
               title: "Coding Competition",
-              desc: "Compete, code, and innovate in our annual hackathon event on 14th November",
+              desc: "Solve challenging problems, compete with peers, and showcase your logic and creativity",
             },
             {
               icon: <Users size={42} />,
