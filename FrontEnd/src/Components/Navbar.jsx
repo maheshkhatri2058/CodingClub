@@ -23,7 +23,8 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6">
-            <HashLink smooth to="/#home" className="hover:text-blue-400 transition">
+            <HashLink smooth to="/#home
+            " className="hover:text-blue-400 transition">
               Home
             </HashLink>
             <HashLink smooth to="/#about" className="hover:text-blue-400 transition">
