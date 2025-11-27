@@ -5,18 +5,21 @@ import ProblemCard from '../Components/ProblemCard'
 const Discussion = () => {
   return (
     <> 
-      <div className='py-6'>
+      <div className='py-20'>
+      <h1 className='text-center text-2xl font-bold'>Solved Problems:</h1>
+      <p className='  text-center px-10'>1.Given an integer array, shift all zero elements to the end while maintaining the relative order of non-zero elements</p>
       <ProblemCard
-      title="Shift All Zeros to the End"
-      description="Given an array, your task is to shift all the zeros to the end of the array while maintaining the order of non-zero elements."
-      input="The first line contains an integer N (size of the array). The second line contains N integers."
-      output="Print the array after shifting all zeros to the end."
-      example={`Input:
-7
-0 1 0 3 12 0 5
+      title="Problem of the day:Find the Second Largest Element"
+description="Given an array of integers, your task is to find the second largest element in the array."
+input="The first line contains an integer N (size of the array). The second line contains N integers."
+output="Print the second largest element of the array. If it does not exist (e.g., all elements are equal or N < 2), print -1."
+example={`Input:
+6
+10 5 20 8 20 3
 
 Output:
-1 3 12 5 0 0 0`}
+10`}
+
     />
       </div>
     </>
