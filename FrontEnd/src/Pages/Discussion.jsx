@@ -7,7 +7,8 @@ const Discussion = () => {
     <> 
       <div className='py-20'>
       <h1 className='text-center text-2xl font-bold'>Solved Problems:</h1>
-      <p className='  text-center px-10'>1.Given an integer array, shift all zero elements to the end while maintaining the relative order of non-zero elements</p>
+      <p className='  text-center px-10'>1.Given an integer array, shift all zero elements to the end while maintaining the relative order of non-zero elements<br></br></p>
+      <p className='text-center px-10'>2. Given integer array , Find the second largest element , return -1 if not found</p>
       <ProblemCard
       title="Problem of the Day: Count Distinct Pairs With Given Sum"
 description="Given an array of integers and an integer K, find how many distinct pairs (a, b) exist such that a + b = K."
