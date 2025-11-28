@@ -9,16 +9,18 @@ const Discussion = () => {
       <h1 className='text-center text-2xl font-bold'>Solved Problems:</h1>
       <p className='  text-center px-10'>1.Given an integer array, shift all zero elements to the end while maintaining the relative order of non-zero elements</p>
       <ProblemCard
-      title="Problem of the day:Find the Second Largest Element"
-description="Given an array of integers, your task is to find the second largest element in the array."
-input="The first line contains an integer N (size of the array). The second line contains N integers."
-output="Print the second largest element of the array. If it does not exist (e.g., all elements are equal or N < 2), print -1."
+      title="Problem of the Day: Count Distinct Pairs With Given Sum"
+description="Given an array of integers and an integer K, find how many distinct pairs (a, b) exist such that a + b = K."
+input="The first line contains an integer N. The second line contains N integers. The third line contains an integer K."
+output="Print the number of distinct pairs with sum equal to K."
 example={`Input:
 6
-10 5 20 8 20 3
+1 5 7 -1 5 3
+6
 
 Output:
-10`}
+2`}
+
 
     />
       </div>
