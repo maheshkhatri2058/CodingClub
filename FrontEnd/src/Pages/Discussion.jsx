@@ -13,30 +13,9 @@ const Discussion = () => {
       <p className='px-10'>3. Given an array of integers and an integer K, find how many distinct pairs (a, b) exist such that a + b = K.</p>
       <p className='px-10'>4. Given an array of integers and an integer K, find the length of the longest subarray whose sum is divisible by K.</p>
       <p className='px-10'>5. Given an array of distinct integers, determine the minimum number of swaps required to sort the array in ascending order.</p>
-
-      
-
-      </div>
-  
-      <ProblemCard
- title="Problem of the Day: Next Greater Element (Circular)"
-description="For each element in the circular array, find the next greater element. If none exists, print -1."
-input="
-The first line contains N.
-The second line contains N integers."
-output="
-Print the next greater element for each index."
-example={`
-Input:
-5
-1 2 1 3 2
-
-Output:
-2 3 3 -1 3
-`}
-
-    />
-    {/* <ProblemCard
+      <p className='px-10'>6. For each element in the circular array, find the next greater element. If none exists, print -1. .</p>
+    </div>
+    <ProblemCard
     title="Problem of the Day: Sliding Window Maximum"
 description="Given an array and an integer K, return the maximum value in every sliding window of size K."
 input="
@@ -50,7 +29,7 @@ Input:
 8
 1 3 -1 -3 5 3 6 7
 3`}
-    /> */}
+    />
       </div>
     </> 
   )
